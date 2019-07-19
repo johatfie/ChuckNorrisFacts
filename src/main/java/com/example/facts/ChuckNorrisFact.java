@@ -11,4 +11,5 @@ public class ChuckNorrisFact {
     public String getFact() {
         return fact;
     }
+
 }
