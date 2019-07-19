@@ -37,7 +37,25 @@ Compilation yields a runnable jar file that can be run as follows:
 java -jar target/facts-0.0.1-SNAPSHOT.jar
 ```
 
-It is a completely self-contained Spring Boot application.
+It is a completely self-contained Spring Boot application, requiring no other software.
+
+Once running direct your browser to [localhost:8080/fact](http://localhost:8080/fact)
+to get a random Chuck Norris joke in json format, e.g.
+```json
+{"fact":"Chuck Norris runs on batteries. Specifically, Die Hards."}
+```
+
+Also available are [localhost:8080/count](http://localhost:8080/count)
+which shows that there are 572 facts available, and
+[localhost:8080/citation](http://localhost:8080/citation)
+which yields
+
+```txt
+Credit for all these Chuck Norris facts goes to
+http://www.killcure.com/2009/10/06/the-ultimate-list-of-chuck-norris-jokes/
+from which I blatently copied the whole list. My thanks to Varun for posting it.
+```
+giving attribution to the source of these jokes.
 
 
 ## License
